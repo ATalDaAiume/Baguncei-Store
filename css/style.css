@@ -1,34 +1,34 @@
 /* =================================== */
 /* style.css - Estilo do Formulário de Contato */
-/* CORREÇÃO: Aumentar a largura do formulário */
+/* CORREÇÃO: Aumentar a largura do formulário & Ajustar Margem H1 */
 /* =================================== */
 
 /* Centraliza o título */
 h1 {
     text-align: center;
-    margin-top: 40px;
+    /* Reduzida de 40px para 20px */
+    margin-top: 20px; 
     margin-bottom: 30px;
-    color: #00bcd4; /* Azul vibrante do tema */
-    font-size: 2.5em; /* Título maior */
-    text-shadow: 2px 2px 0 #333; /* Efeito de sombra */
-    transform: rotate(1deg); /* Leve desorganização */
+    color: #00bcd4; 
+    font-size: 2.5em; 
+    text-shadow: 2px 2px 0 #333; 
+    transform: rotate(1deg); 
     display: block;
 }
 
 /* Estiliza o contêiner do formulário (o box) */
 #fale {
-    max-width: 750px; /* Aumentado para melhor visualização */
-    width: 90%; /* Garante que ocupe bem o espaço em telas menores */
-    margin: 40px auto;
+    max-width: 750px; 
+    width: 90%; 
+    /* Reduzida de 40px para 20px */
+    margin: 20px auto; 
     padding: 30px;
     background: #fff;
-    /* Borda tracejada e colorida, como na sidebar do Index */
     border: 4px dashed #ffeb3b;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* Sombra colorida e deslocada para o efeito divertido */
     box-shadow: 8px 8px 0 #ff69b4; 
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -38,12 +38,12 @@ h1 {
     box-shadow: 10px 10px 0 #e91e63;
 }
 
-/* Estiliza labels e inputs */
+/* Estiliza labels e inputs (Mantido) */
 #fale label {
     font-weight: bold;
-    color: #333; /* Mais escuro */
+    color: #333; 
     font-size: 1.1em;
-    display: block; /* Garante que o input fique abaixo da label */
+    display: block; 
     margin-bottom: 5px;
 }
 
@@ -52,7 +52,6 @@ h1 {
 #fale textarea {
     width: 100%;
     padding: 12px;
-    /* Borda mais grossa e colorida */
     border: 2px solid #ccc; 
     border-radius: 6px;
     box-sizing: border-box;
@@ -63,8 +62,8 @@ h1 {
 #fale input[type="text"]:focus, 
 #fale input[type="email"]:focus, 
 #fale textarea:focus {
-    border-color: #00bcd4; /* Cor de foco vibrante */
-    outline: none; /* Remove o outline padrão do navegador */
+    border-color: #00bcd4; 
+    outline: none; 
 }
 
 #fale textarea {
@@ -72,9 +71,8 @@ h1 {
     min-height: 120px;
 }
 
-/* Estiliza o botão de Enviar */
+/* Estiliza o botão de Enviar (Mantido) */
 #fale button[type="submit"] {
-    /* Cor principal de destaque */
     background-color: #ff69b4; 
     color: white;
     padding: 15px 20px;
@@ -85,12 +83,12 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     transition: background-color 0.3s, transform 0.1s;
-    box-shadow: 3px 3px 0 rgba(0,0,0,0.3); /* Sombra para profundidade */
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.3); 
     margin-top: 20px;
 }
 
 #fale button[type="submit"]:hover {
-    background-color: #e91e63; /* Pink mais escuro no hover */
+    background-color: #e91e63; 
     transform: translateY(-2px);
     box-shadow: 5px 5px 0 rgba(0,0,0,0.4);
 }
