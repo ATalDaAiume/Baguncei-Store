@@ -5,7 +5,7 @@
 
 const PRODUTOS_KEY = 'bagunceiStoreProdutos';
 let editandoId = null; 
-let produtoParaExcluirId = null; // Para o modal customizado
+let produtoParaExcluirId = null; 
 
 // --- 1. Funções de Simulação de Banco de Dados (localStorage) ---
 
@@ -79,7 +79,7 @@ function salvarProduto(nome, precoStr) {
     const precoNum = parseFloat(precoStr.replace(',', '.'));
 
     if (isNaN(precoNum) || precoNum <= 0) {
-        alert('Preço inválido.');
+        alert('Preço inválido. Use um formato como 10,00.');
         return;
     }
 

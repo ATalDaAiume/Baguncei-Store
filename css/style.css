@@ -1,13 +1,12 @@
 /* =================================== */
 /* style.css - Estilo do Formulário de Contato */
-/* CORREÇÃO: Aumentar a largura do formulário & Ajustar Margem H1 */
+/* CORREÇÃO: Ajuste de Margem do H1 */
 /* =================================== */
 
 /* Centraliza o título */
 h1 {
     text-align: center;
-    /* Reduzida de 40px para 20px */
-    margin-top: 20px; 
+    margin-top: 20px; /* Ajustado para evitar scroll */
     margin-bottom: 30px;
     color: #00bcd4; 
     font-size: 2.5em; 
@@ -20,8 +19,7 @@ h1 {
 #fale {
     max-width: 750px; 
     width: 90%; 
-    /* Reduzida de 40px para 20px */
-    margin: 20px auto; 
+    margin: 20px auto; /* Ajustado para evitar scroll */
     padding: 30px;
     background: #fff;
     border: 4px dashed #ffeb3b;
@@ -38,7 +36,7 @@ h1 {
     box-shadow: 10px 10px 0 #e91e63;
 }
 
-/* Estiliza labels e inputs (Mantido) */
+/* Estiliza labels e inputs */
 #fale label {
     font-weight: bold;
     color: #333; 
@@ -71,7 +69,7 @@ h1 {
     min-height: 120px;
 }
 
-/* Estiliza o botão de Enviar (Mantido) */
+/* Estiliza o botão de Enviar */
 #fale button[type="submit"] {
     background-color: #ff69b4; 
     color: white;
