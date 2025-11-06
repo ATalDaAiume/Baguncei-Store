@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Loja Bagunçada</title> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/app.css"> 
+
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" id="logo" alt="Logo da Loja Bagunçada">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h1>Produtos</h1>
+            <div class="card" data-id="1">
+                <h2 class="title">Mesa</h2>
+                <p class="price">R$ 1200</p>
+                <button onclick="editar(1)">Editar</button>
+                <button onclick="excluir(1)">Excluir</button>
+            </div>
+            <div class="card" data-id="2">
+                <h2 class="title">Cadeira</h2>
+                <p class="price">R$ 300</p>
+                <button onclick="editar(2)">Editar</button>
+                <button onclick="excluir(2)">Excluir</button>
+            </div>
+        </section>
+
+        <aside>
+            <h2>Cadastro de Produto</h2>
+            <form id="novo" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="preco">Preço</label>
+                <input type="text" id="preco" name="preco" required>
+                
+                <button type="submit">Salvar</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© Loja Bagunçada</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script> 
+    
+</body>
+</html>
