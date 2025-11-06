@@ -13,7 +13,7 @@ function getProdutos() {
     const data = localStorage.getItem(PRODUTOS_KEY);
     if (!data) {
         return [
-            { id: 1, nome: 'Cris bumbum guloso', preco: 10.00 },
+            { id: 1, nome: 'Mesa em L', preco: 400.00 },
             { id: 2, nome: 'Cadeira', preco: 30.00 },
         ];
     }
